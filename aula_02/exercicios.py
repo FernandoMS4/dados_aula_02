@@ -211,14 +211,14 @@ import math
 
 # 22: Verificador de Palíndromo
 
-try:
-    p = '233234'
-    if p == p[::-1]:
-        print("É um palindromo")
-    else:
-        print("Nâo é um palindromo")
-except:
-    print("Algo deu errado... :/")
+# try:
+#     p = '233234'
+#     if p == p[::-1]:
+#         print("É um palindromo")
+#     else:
+#         print("Nâo é um palindromo")
+# except:
+#     print("Algo deu errado... :/")
 
 # 23: Calculadora Simples
 # 24: Classificador de Números
