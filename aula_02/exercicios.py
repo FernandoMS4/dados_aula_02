@@ -141,26 +141,85 @@ import math
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
-try:
-    st1 = input("1: ")
-    st2 = input("2: ")
-    st3 = st1 + " " + st2
-    print(st3)
-except:
-    print("Algo deu errado... :/") 
+##### R:
+# try:
+#     st1 = input("1: ")
+#     st2 = input("2: ")
+#     st3 = st1 + " " + st2
+#     print(st3)
+# except:
+#     print("Algo deu errado... :/") 
 
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+
+##### R:
+# try:
+#      v1 = True
+#      v2 = False
+#      v3 = v1 and v2
+#      print(f"Valores: {v3}")
+# except:
+#     print("Algo deu errado... :/") 
+
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+
+##### R:
+# try:
+#      v1 = True
+#      v2 = False
+#      v3 = v1 or v2
+#      print(f"Valores: {v3}")
+# except:
+#     print("Algo deu errado... :/") 
+    
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+
+##### R:
+# try:
+#     v1 = bool(input(""))
+#     if v1 == True:
+#         print("False") 
+#     else:
+#         print("True")
+# except:
+#     print("Algo deu errado... :/")
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+
+##### R:
+# try:
+#     n1 = int(input(""))
+#     n2 = int(input(""))
+#     if n1 == n2:
+#         print("São enguais")
+#     else:
+#         print("Não são enguais")
+# except:
+#     print("Algo deu errado... :/")
+
+
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+##### R:
+
 # 22: Verificador de Palíndromo
+
+try:
+    p = '233234'
+    if p == p[::-1]:
+        print("É um palindromo")
+    else:
+        print("Nâo é um palindromo")
+except:
+    print("Algo deu errado... :/")
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
