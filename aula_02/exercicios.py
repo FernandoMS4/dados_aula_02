@@ -1,5 +1,44 @@
 import math
 
+# DESAFIO - Refatorar o projeto da aula anterior evitando Bugs!
+# Para resolver os bugs identificados — tratamento de entradas inválidas que não podem ser convertidas
+# para um número de ponto flutuante e prevenção de valores negativos para salário e bônus, você pode modificar o código diretamente.
+# Isso envolve adicionar verificações adicionais após a tentativa de conversão para garantir que os valores sejam positivos.
+
+#1º  Input de nome
+
+# Solicita ao usuário que digite seu nome
+try:
+    special = "\"~!@#$%^&*()-+?_=,<>/"
+    nome = input("Digite seu nome: ")
+    if any(char.isdigit() for char in nome) == True:
+        print("O nome não pode conter números")
+    elif any(c in special for c in nome):
+        print("Não pode conter caracteres especiais")
+    elif len(nome.strip()) == 0:
+        print(f"O nome não pode ser vazio ou somente espaços ({len(nome.strip())})")
+except KeyError as e:
+    print(e)
+
+# Solicita ao usuário que digite o valor do seu salário e converte para float
+try:
+    sal = float(input("Digite seu salário: "))
+    bonus = float(input("Digite o bonus: "))
+    if sal < 0 or bonus <0:
+        if sal <0:
+            print(f"O valor de salário digitado não pode ser negativo: {sal}")
+        else:
+            print(f"O valor de bonus digitado não pode ser negativo: {bonus}")
+except ValueError as e:
+    print(e)
+
+# Assumindo uma lógica de cálculo para o bônus final e KPI
+ajuste = (bonus * 1.2)
+ins = (1000 +(sal*bonus))
+print(f"O ajuste no salário é de {ajuste:.2}%")
+print(f"Parabéns {nome}, o bonus recebido neste mês foi de {ins}")    
+
+## Execicios
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
